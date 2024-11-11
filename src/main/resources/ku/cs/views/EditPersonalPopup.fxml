@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.admin.EditPersonalPopupController">
+   <children>
+      <Label layoutX="24.0" layoutY="93.0" text="Username:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="138.0" text="Name:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="majorLabel" layoutX="24.0" layoutY="280.0" text="Major:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="237.0" text="Faculty:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="idLabel" layoutX="24.0" layoutY="326.0" text="ID:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="usernameField" layoutX="99.0" layoutY="89.0" prefHeight="26.0" prefWidth="178.0">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="nameField" layoutX="99.0" layoutY="133.0" prefHeight="26.0" prefWidth="178.0">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="idField" layoutX="99.0" layoutY="321.0" prefHeight="26.0" prefWidth="291.0">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></TextField>
+      <Button layoutX="495.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleOkButton" text="OK">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Button>
+      <TextField fx:id="surnameField" layoutX="289.0" layoutY="134.0" prefHeight="26.0" prefWidth="197.0">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="passwordField" layoutX="99.0" layoutY="183.0" prefHeight="26.0" prefWidth="291.0">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></TextField>
+      <Label layoutX="24.0" layoutY="188.0" text="Password:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="facultyComboBox" layoutX="99.0" layoutY="233.0" prefWidth="150.0" />
+      <ComboBox fx:id="majorComboBox" layoutX="99.0" layoutY="276.0" prefWidth="150.0" />
+      <Label fx:id="NameFacultyLabel" layoutX="263.0" layoutY="237.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="NameMajorLabel" layoutX="263.0" layoutY="280.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="roleLabel" layoutX="24.0" layoutY="14.0" text="Role">
+         <font>
+            <Font name="Fahkwang Regular" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorUsernameLabel" layoutX="99.0" layoutY="115.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="errorNameLabel" layoutX="99.0" layoutY="160.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="errorSurnameLabel" layoutX="291.0" layoutY="160.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="errorPasswordLabel" layoutX="99.0" layoutY="209.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="errorIdLabel" layoutX="99.0" layoutY="352.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

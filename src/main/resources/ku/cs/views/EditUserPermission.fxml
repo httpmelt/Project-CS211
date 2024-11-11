@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.admin.EditDataPermissionController">
+   <children>
+      <Label layoutX="55.0" layoutY="215.0" prefHeight="42.0" prefWidth="126.0" text="สถานะผูืใช้ระบบ">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="statusLabel" layoutX="159.0" layoutY="227.0" prefHeight="18.0" prefWidth="134.0" text="statusAccessLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Button fx:id="saveButton" layoutX="55.0" layoutY="288.0" mnemonicParsing="false" onAction="#onButtonPermissionClicked" text="ไม่อณุญาตืให้ใช้ระบบ">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="userProfileImageView" fitHeight="96.0" fitWidth="102.0" layoutX="57.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="57.0" layoutY="200.0" text="ชื่อ">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" layoutX="79.0" layoutY="200.0" text="nameLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="172.0" text="username:">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="usernameLabel" layoutX="123.0" layoutY="171.0" prefHeight="18.0" prefWidth="90.0" text="usernameLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="27.0" text="ผู้ใช้ระบบ">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="249.0" text="เวลา">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="timeLabel" layoutX="90.0" layoutY="249.0" text="timeLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="roleLabel" layoutX="116.0" layoutY="27.0" text="Label">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Button layoutX="500.0" layoutY="348.0" mnemonicParsing="false" onAction="#onSaveButtonClicked" text="บันทึก">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

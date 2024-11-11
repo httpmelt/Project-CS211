@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.admin.DataController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="529.0" prefWidth="750.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006664" height="98.0" layoutX="-6.0" layoutY="-26.0" stroke="#006664" strokeType="INSIDE" width="803.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006664" height="600.0" layoutX="-2.0" layoutY="58.0" stroke="#006664" strokeType="INSIDE" width="79.0" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="128.0" text="ข้อมูลผู้ใช้" textFill="WHITE">
+               <font>
+                  <Font name="Fahkwang Regular" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="72.0" mnemonicParsing="false" onAction="#onBoardBackClick" prefHeight="46.0" prefWidth="44.0" style="-fx-background-color: #006664;">
+               <graphic>
+                  <ImageView fx:id="dashBoardImageView1" fitHeight="41.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button layoutX="8.0" layoutY="132.0" mnemonicParsing="false" onAction="#onBoardToDataClick" prefHeight="46.0" prefWidth="56.0" style="-fx-background-color: #00514e;">
+               <graphic>
+                  <ImageView fx:id="DataImageView1" fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button layoutX="8.0" layoutY="190.0" mnemonicParsing="false" onAction="#OnBoardToClassClick" prefHeight="46.0" prefWidth="56.0" style="-fx-background-color: #006664;">
+               <graphic>
+                  <ImageView fx:id="DataClassImageView1" fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button layoutX="8.0" layoutY="247.0" mnemonicParsing="false" onAction="#OnBoardToPersonalClick" prefHeight="46.0" prefWidth="44.0" style="-fx-background-color: #006664;">
+               <graphic>
+                  <ImageView fx:id="PersonalImageView1" fitHeight="41.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <ImageView fx:id="sampleImageView" fitHeight="92.0" fitWidth="102.0" layoutX="379.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="121.0" layoutY="73.0" prefHeight="46.0" prefWidth="238.0" text="รายชื่อผู้ใช้ระบบ">
+               <font>
+                  <Font name="Fahkwang Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="538.0" layoutY="147.0" prefHeight="36.0" prefWidth="112.0" text="ผู้ใช้ระบบ">
+               <font>
+                  <Font name="Fahkwang Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="538.0" layoutY="292.0" prefHeight="36.0" prefWidth="83.0" text="ชื่อ:">
+               <font>
+                  <Font name="Fahkwang Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="572.0" layoutY="301.0" text="nameLabel" />
+            <Label layoutX="538.0" layoutY="326.0" prefHeight="36.0" prefWidth="83.0" text="เวลา:">
+               <font>
+                  <Font name="Fahkwang Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" layoutX="585.0" layoutY="335.0" text="timeLabel">
+               <font>
+                  <Font name="Fahkwang Regular" size="12.0" />
+               </font></Label>
+            <Label layoutX="539.0" layoutY="265.0" text="username:">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="621.0" layoutY="265.0" text="userLabel">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="loginImageView1" fitHeight="50.0" fitWidth="56.0" layoutX="544.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="adminnameLabel" layoutX="613.0" layoutY="14.0" text="loginLabelName" textFill="WHITE">
+               <font>
+                  <Font name="Fahkwang Regular" size="12.0" />
+               </font></Label>
+            <ImageView fx:id="sampleImageView" fitHeight="86.0" fitWidth="86.0" layoutX="534.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true" />
+            <TableView fx:id="DataTableView" layoutX="120.0" layoutY="159.0" prefHeight="425.0" prefWidth="391.0">
+              <columns>
+                <TableColumn prefWidth="187.20001983642578" text="C1" />
+                <TableColumn prefWidth="200.79998779296875" text="C2" />
+              </columns>
+            </TableView>
+            <TextField fx:id="searchTextField" layoutX="120.0" layoutY="121.0" prefHeight="26.0" prefWidth="391.0">
+               <font>
+                  <Font name="Fahkwang Regular" size="12.0" />
+               </font></TextField>
+            <ComboBox fx:id="RoleNameComboBox" layoutX="270.0" layoutY="83.0" prefWidth="150.0" />
+            <Label fx:id="roleNameLabel" layoutX="614.0" layoutY="152.0" text="Role">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="708.0" layoutY="42.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="20.0" prefWidth="77.6" text="ออกจากระบบ">
+               <font>
+                  <Font name="Fahkwang Regular" size="10.0" />
+               </font></Button>
+            <Button layoutX="745.0" layoutY="11.0" mnemonicParsing="false" onAction="#onOptionButtonClick" text="ตั้งค่า">
+               <font>
+                  <Font name="Fahkwang Regular" size="10.0" />
+               </font></Button>
+            <Label fx:id="adminIdLabel" layoutX="613.0" layoutY="37.0" text="Label">
+               <font>
+                  <Font name="Fahkwang Regular" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

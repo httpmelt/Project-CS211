@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.departmentStaff.DepartmentManageStudentController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#006664" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Label layoutX="684.0" layoutY="15.0" text="เจ้าหน้าที่ภาควิชา" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font></Label>
+      <Rectangle arcWidth="5.0" fill="#d9d9d9" height="552.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Label layoutX="40.0" layoutY="83.0" text="จัดการคำร้อง">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutY="63.0" mnemonicParsing="false" onAction="#onNextButtonClick" opacity="0.05" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="รายการคำร้อง" textAlignment="RIGHT" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="146.0" prefHeight="20.0" prefWidth="114.0" text="ชื่อบุคคลที่จะอนุมัติ">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutY="125.0" mnemonicParsing="false" onAction="#nextButtonClick" opacity="0.07" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="จัดการคำร้อง" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="208.0" text="รายการคำร้องที่อนุมัติ">
+         <font>
+            <Font name="Fahkwang Regular" size="11.0" />
+         </font>
+      </Label>
+      <Button layoutY="185.0" mnemonicParsing="false" onAction="#goNextClick" opacity="0.06" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="รายการคำร้องที่อนุมัติ" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="40.0" layoutY="556.0" text="ออกจากระบบ" textFill="#e44a4a">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutY="540.0" mnemonicParsing="false" onAction="#onLogoutClick" opacity="0.03" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="ออกจากระบบ" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="50.0" layoutY="503.0" text="การตั้งค่า">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutY="483.0" mnemonicParsing="false" onAction="#goOptionButton" opacity="0.01" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="การตั้งค่า" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Group layoutX="14.0" layoutY="207.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Group layoutX="14.0" layoutY="148.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Group layoutX="14.0" layoutY="86.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Label layoutX="331.0" layoutY="15.0" text="มหาวิทยาลัยเกษตรศาสตร์" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" layoutX="520.0" layoutY="125.0" text="nameLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastnameLabel" layoutX="696.0" layoutY="126.0" text="lastname">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabel" layoutX="557.0" layoutY="172.0" text="idLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="125.0" text="ชื่อ :">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="172.0" text="รหัสนิสิต :">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="126.0" text="นามสกุล :">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="274.0" text="รหัสอาจารณ์ที่ปรึกษา :">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="223.0" text="อีเมล :">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="547.0" layoutY="223.0" text="emalLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="studentListView" layoutX="191.0" layoutY="128.0" prefHeight="448.0" prefWidth="266.0" />
+      <Label fx:id="teacherIdLabel" layoutX="646.0" layoutY="274.0" text="teacherIdLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="95.0" text="จัดการนิสิตในความดูแล" underline="true">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="585.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleEditButton" text="Edit " />
+      <Button layoutX="658.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleAddButton" text="Add" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.ListNameController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#006664" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Label layoutX="722.0" layoutY="15.0" text="เจ้าหน้าที่ภาควิชา" textFill="WHITE" />
+      <Rectangle arcWidth="5.0" fill="#d9d9d9" height="552.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Button layoutY="48.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="รายการคำร้อง" textAlignment="RIGHT" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="125.0" mnemonicParsing="false" onAction="#nextButtonClick" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="จัดการคำร้อง" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="185.0" mnemonicParsing="false" onAction="#goNextClick" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="รายการคำร้องที่อนุมัติ" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="540.0" mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="ออกจากระบบ" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="483.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: D9D9D9;" text="การตั้งค่า" textFill="#d9d9d9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Group layoutX="14.0" layoutY="207.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Label layoutX="40.0" layoutY="204.0" text="รายการคำร้องที่อนุมัติ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="145.0" prefHeight="20.0" prefWidth="114.0" text="ชื่อบุคคลที่จะอนุมัติ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Group layoutX="14.0" layoutY="148.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Label layoutX="40.0" layoutY="83.0" text="จัดการคำร้อง">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Group layoutX="14.0" layoutY="86.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+            <Rectangle arcWidth="5.0" height="3.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+         </children>
+      </Group>
+      <Label layoutX="50.0" layoutY="503.0" text="การตั้งค่า">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="556.0" text="ออกจากระบบ" textFill="#e44a4a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="15.0" text="มหาวิทยาลัยเกษตรศาสตร์" textFill="WHITE" />
+      <ImageView fx:id="profilePicLabel" fitHeight="45.0" fitWidth="35.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Downloads/qweqeqweqwe.png" />
+         </image>
+      </ImageView>
+      <ListView layoutX="218.0" layoutY="113.0" prefHeight="437.0" prefWidth="194.0" />
+      <Label layoutX="483.0" layoutY="115.0" text="ชื่อบุคคลที่จะอนุมัติคำร้อง" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="145.0" text="ชื่อ :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="436.0" layoutY="165.0" />
+      <Label layoutX="430.0" layoutY="190.0" text="nameErrorLabel" textFill="RED" />
+      <Label layoutX="600.0" layoutY="145.0" text="นามสกุล :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="607.0" layoutY="165.0" />
+      <Label layoutX="606.0" layoutY="190.0" text="lastnameErrorLabel" textFill="RED" />
+      <Label layoutX="434.0" layoutY="224.0" text="ตำแหน่ง :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="440.0" layoutY="245.0" />
+      <Label layoutX="446.0" layoutY="270.0" text="roleErrorLabel" textFill="RED" />
+   </children>
+</AnchorPane>

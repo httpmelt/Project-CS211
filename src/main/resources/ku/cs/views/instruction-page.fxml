@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.InstructionController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#006664" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Label layoutX="330.0" layoutY="15.0" text="มหาวิทยาลัยเกษตรศาสตร์" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="62.0" text="คำแนะนำการใช้โปรแกรมเบื้องต้น" underline="true">
+         <font>
+            <Font name="Fahkwang Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToLoginPageButton" style="-fx-background-color: #006664;" text="ย้อนกลับ" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Fahkwang Regular" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="60.0" layoutY="89.0" text="บทบาทนิสิต">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="109.0" text="1. นิสิตต้องตรวจสอบกับอาจารย์ที่ปรึกษาก่อนถึงสามารถลงทะเบียนเข้าใช้งานได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="129.0" text="2. นิสิตสามารถสร้าง ดูและค้นหารายการคำร้องได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="149.0" text="3. นิสิตสามารถดาวน์โหลดไฟล์เฉพาะคำร้องที่มีการอนุมัติจากเจ้าหน้าที่ภาควิชาหรือจากคณบดีเท่านั้น">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="183.0" text="บทบาทอาจารย์ที่ปรึกษา">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="203.0" text="1. อาจารย์ที่ปรึกษาสามารถค้นหารายชื่อนิสิตในที่ปรึกษาได้และกดเข้าไปดูประวัติคำร้องของนิสิตได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="223.0" text="2. อาจารย์ที่ปรึกษาสามารถจัดการคำร้องของนิสิตที่รับผิดชอบได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="257.0" text="บทบาทเจ้าหน้าที่ภาควิชา">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="277.0" text="1. เจ้าหน้าที่ภาควิชาสามารถดูรายการคำร้องทั้งหมดในภาควิชาที่สังกัดได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="300.0" text="2. เจ้าหน้าที่ภาควิชาสามารถกำหนดชื่อบุคคลที่จะอนุมัติคำร้องระดับภาควิชาได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="320.0" text="3. เจ้าหน้าที่ภาควิชาสามารถจัดการคำร้องที่ได้รับอนุมัติจากอาจารย์ที่ปรึกษาในภาควิชาได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="340.0" text="4. เจ้าหน้าที่ภาควิชาสามารถจัดการนิสิตในความดูแลได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="370.0" text="บทบาทเจ้าหน้าที่คณะ">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="390.0" text="1. เจ้าหน้าที่คณะสามารถดูรายการคำร้องทั้งหมดในคณะที่สังกัดได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="410.0" text="2. เจ้าหน้าที่คณะสามารถกำหนดชื่อบุคคลที่จะอนุมัติคำร้องระดับคณะได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="430.0" text="3. เจ้าหน้าที่คณะสามารถจัดการคำร้องที่ได้รับอนุมัติการจากเจ้าหน้าที่คณะได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="460.0" text="บทบาทผู้ดูแลระบบ">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="482.0" text="1. ผู้ดูแลระบบมีหน้าที่สามารถค้นหารายชื่อและข้อมูลของผู้ใช้ระบบทั้งหมด">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="504.0" text="2. ผู้ดูแลระบบสามารถเพิ่มและแก้ไขรหัสคณะหรือภาควิชาได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="526.0" text="3. ผู้ดูแลระบบสามารถเพิ่มและแก้ไขเจ้าหน้าที่ได้">
+         <font>
+            <Font name="Fahkwang Regular" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

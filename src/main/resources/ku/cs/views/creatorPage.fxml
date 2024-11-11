@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.CreatorPageController">
+   <children>
+      <ImageView fx:id="sampleImageView" fitHeight="650.0" fitWidth="926.0" layoutX="-43.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/login_page.jpg" />
+         </image></ImageView>
+      <Label layoutX="334.0" layoutY="85.0" text="รายชื่อผู้จัดทำ" textAlignment="CENTER">
+         <font>
+            <Font name="Fahkwang Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="376.0" layoutX="46.0" layoutY="139.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="705.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6509804129600525" green="0.6509804129600525" blue="0.6509804129600525" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Group layoutX="293.0" layoutY="153.0">
+         <children>
+            <Group layoutX="-30.0" />
+         </children>
+      </Group>
+      <Button layoutX="59.0" layoutY="150.0" mnemonicParsing="false" onAction="#btToHomePage" prefHeight="28.0" prefWidth="124.0" style="-fx-background-color: #e8e4e4; -fx-opacity: 0.7;" text="กลับสู่หน้าหลัก">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="ariyachai" fitHeight="118.0" fitWidth="138.0" layoutX="113.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ariyachai.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="362.0" text="อริยชัย จอมเกาะ">
+         <font>
+            <Font name="Fahkwang Medium" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="407.0" text="6610451249">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="385.0" text="ต้นน้ำ">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="nontakan" fitHeight="118.0" fitWidth="138.0" layoutX="451.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/nontakan.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="426.0" layoutY="362.0" text="นนทกานต์ อรุณวัฒนวงศ์">
+         <font>
+            <Font name="Fahkwang Medium" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="385.0" text="นาย">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="407.0" text="6610450242">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="362.0" text="ภัทรการต์ เบ้งฮ้อ">
+         <font>
+            <Font name="Fahkwang Medium" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="385.0" text="แต้ม">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="362.0" text="ชัยยงค์ คึมยะราช">
+         <font>
+            <Font name="Fahkwang Medium" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="385.0" text="เปา">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="407.0" text="6610450358">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="407.0" text="6610450901">
+         <font>
+            <Font name="Fahkwang Light" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="paocked" fitHeight="118.0" fitWidth="138.0" layoutX="616.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/paocked.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pattarakarn" fitHeight="118.0" fitWidth="138.0" layoutX="274.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/pattarakarn.JPG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

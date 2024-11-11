@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.LoginController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="395.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="237.0" layoutY="87.0" text="ระบบการจัดการการอนุมัติคำร้อง">
+         <font>
+            <Font name="Fahkwang Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="688.0" layoutY="566.0" mnemonicParsing="false" style="-fx-background-color: #f5f4f5;" text="คณะผู้จัดทำ" textFill="#6e6e6e" underline="true">
+         <font>
+            <Font name="Fahkwang Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="sampleImageView" fitHeight="330.0" fitWidth="507.0" layoutX="123.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="330.0" layoutX="370.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6509804129600525" green="0.6509804129600525" blue="0.6509804129600525" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Label layoutX="475.0" layoutY="181.0" text="เข้าสู่ระบบ" textAlignment="CENTER">
+         <font>
+            <Font name="Fahkwang Bold" size="18.0" />
+         </font>
+      </Label>
+      <Group layoutX="377.0" layoutY="153.0">
+         <children>
+            <Group layoutX="-30.0" />
+            <Label layoutX="27.0" layoutY="77.0" text="ชื่อผู้ใช้">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="158.0" text="รหัสผ่าน">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameErrorLabel" layoutX="27.0" layoutY="129.0" text="usernameErrorLabel" textFill="RED">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordErrorLabel" layoutX="27.0" layoutY="200.0" text="passwordErrorLabel" textFill="RED">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="27.0" layoutY="104.0" />
+            <TextField fx:id="passwordField" layoutX="27.0" layoutY="176.0" />
+         </children>
+      </Group>
+      <Rectangle arcWidth="5.0" fill="#006664" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Button layoutX="384.0" layoutY="410.0" mnemonicParsing="false" onAction="#onNisitRegisterButton" style="-fx-background-color: #ffffff;" text="ลงทะเบียนสำหรับนิสิต" textFill="#6e6e6e" underline="true">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="552.0" layoutY="410.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="3.0" prefWidth="90.0" text="เข้าสู่ระบบ">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

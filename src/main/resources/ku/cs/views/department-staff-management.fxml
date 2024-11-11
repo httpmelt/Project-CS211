@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.departmentStaff.DepartmentStaffManagementController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#006664" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Label layoutX="687.0" layoutY="15.0" text="เจ้าหน้าที่ภาควิชา" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="326.0" layoutY="15.0" text="มหาวิทยาลัยเกษตรศาสตร์" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font></Label>
+      <ImageView fx:id="sampleImageView" fitHeight="45.0" fitWidth="35.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Downloads/qweqeqweqwe.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="320.0" layoutY="150.0" text="ชื่อ :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="335.0" layoutY="64.0" text="จัดการคำร้อง" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Fahkwang Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="studentNameLabel" layoutX="320.0" layoutY="171.0" text="nameLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="150.0" text="รายการคำร้อง :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="formNameLabel" layoutX="80.0" layoutY="171.0" text="formNameLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="278.0" text="นิสิตดำเนินการ :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="studentProcessDateLabel" layoutX="320.0" layoutY="298.0" text="studentDate">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="150.0" text="รหัสนิสิต :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="studentIdLabel" layoutX="555.0" layoutY="171.0" text="studentIdLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="211.0" text="สถานะคำร้อง :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="reqStatusLabel" layoutX="320.0" layoutY="229.0" text="statusLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="278.0" text="อาจารย์ที่ปรึกษาอนุมัติ :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="teacherProcessDateLabel" layoutX="555.0" layoutY="298.0" text="teacherDate">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="113.0" text="รายละเอียดคำร้อง :" underline="true">
+         <font>
+            <Font name="Fahkwang Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="333.0" layoutY="501.0" mnemonicParsing="false" onAction="#onManagePopupButton" text="ดำเนินการคำร้อง">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font></Button>
+      <ImageView fx:id="profilePicLabel" fitHeight="40.0" fitWidth="40.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameLabel" layoutX="51.0" layoutY="24.0" text="nameLabel" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="6.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Fahkwang Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="211.0" text="การดำเนิการคำร้อง :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="processStatusLabel" layoutX="555.0" layoutY="229.0" text="processLabel">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="211.0" text="ชั้นปี :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="educationGradeLabel" layoutX="80.0" layoutY="229.0" text="Grade">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="266.0" text="เหตุผล :">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="feeReq" layoutY="398.0" prefHeight="59.0" prefWidth="446.0">
+         <children>
+            <Label layoutX="80.0" text="ค่าธรรมเนียมการศึกษา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="feeAmountLabel" layoutX="80.0" layoutY="15.0" text="feeAmt">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="-1.0" text="วันกำหนดชำระ :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="extensionDueDateLabel" layoutX="309.0" layoutY="19.0" text="feeAmt">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addDropReq" layoutY="398.0" prefHeight="86.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="70.0" text="ความประสงค์ :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="optionAddOrDropLabel" layoutX="70.0" layoutY="18.0" text="optionAddDrop">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" text="รหัสวิชา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="subjectIdLabel" layoutX="297.0" layoutY="18.0" text="subject">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="475.0" text="ชื่อวิชา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="subjectLabel" layoutX="475.0" layoutY="18.0" text="subject">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="leaveReq" layoutY="398.0" prefHeight="59.0" prefWidth="446.0">
+         <children>
+            <Label layoutX="80.0" text="ระดับการศึกษา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="degreeLabel" layoutX="80.0" layoutY="20.0" text="degree">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" text="หลักสูตร :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="curriculumLabel" layoutX="297.0" layoutY="20.0" text="cirriculum">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="FeeAndLeaveAnchor" layoutX="465.0" layoutY="398.0" prefHeight="66.0" prefWidth="258.0">
+         <children>
+            <Label layoutY="-1.0" text="ภาคการศึกษา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="educationTermLabel" layoutX="16.0" layoutY="18.0" text="term">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="-1.0" text="ปีการศึกษา :">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="educationYearLabel" layoutX="151.0" layoutY="18.0" text="year">
+               <font>
+                  <Font name="Fahkwang Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="3.0" layoutY="54.0" mnemonicParsing="false" onAction="#onNextButtonClick" style="-fx-background-color: #f8f4f4;" text="ย้อนกลับ" textFill="#535353" underline="true">
+         <font>
+            <Font name="Fahkwang Regular" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="reasonTextArea" layoutX="80.0" layoutY="288.0" prefHeight="40.0" prefWidth="178.0" />
+   </children>
+</AnchorPane>
